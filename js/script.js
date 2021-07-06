@@ -13,16 +13,21 @@
 //list of surnames
 var arr = ["bianchi", "neri", "rossi", "verdi", "gialli"];
 var msg = "";   //for concat string msg;
-var surname;
+var surname=" ";
 var reg = "[0-9]";// regular expression for number validation
 var listElements = document.getElementById("list-elements");
-
+var hasNum=false;
 //validation  for string that contain string number and empty string
 do {
     surname = prompt("inserisci il cognome: ").trim();
-    console.log(surname.match(reg));
-} while (!surname && surname.match(reg));
+    if(surname.match(reg)>0){
+        hasNum=true;
+    }
+} while (!surname);
 
+if(hasNum){
+    alert("nel tuo cognome c'è un numero...");
+}
 //if passed validation than push surname in arr
 
 arr.push(surname.toLowerCase());
