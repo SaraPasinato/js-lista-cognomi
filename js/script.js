@@ -15,7 +15,7 @@ var arr = ["bianchi", "neri", "rossi", "verdi", "gialli"];
 var msg = "";   //for concat string msg;
 var surname = "";
 var reg = "[0-9]";// regular expression for number validation
-var listElements=document.getElementById("list-elements");
+var listElements = document.getElementById("list-elements");
 
 //validation  for string that contain string number and empty string
 do {
@@ -33,11 +33,11 @@ console.table(arr);
 arr.sort();
 
 //iteration for   html elments output
-for(var i=0; i<arr.length; i++){
-    msg+="<li>"+ (i+1)+": "+ arr[i]+ "</li> \n";
+for (var i = 0; i < arr.length; i++) {
+    msg += "<li>" + (i + 1) + ": " + arr[i] + "</li> \n";
 }
 
-listElements.innerHTML=msg;
+listElements.innerHTML = msg;
 //debug inline
 console.log("dopo l'ordinamento:");
 console.table(arr);
