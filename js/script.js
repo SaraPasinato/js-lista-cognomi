@@ -13,7 +13,7 @@
 //list of surnames
 var arr = ["bianchi", "neri", "rossi", "verdi", "gialli"];
 var msg = "";   //for concat string msg;
-var surname = "";
+var surname;
 var reg = "[0-9]";// regular expression for number validation
 var listElements = document.getElementById("list-elements");
 
