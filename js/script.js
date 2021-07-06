@@ -20,7 +20,7 @@ var listElements = document.getElementById("list-elements");
 //validation  for string that contain string number and empty string
 do {
     surname = prompt("inserisci il cognome: ").trim();
-
+    console.log(surname.match(reg));
 } while (!surname && surname.match(reg));
 
 //if passed validation than push surname in arr
