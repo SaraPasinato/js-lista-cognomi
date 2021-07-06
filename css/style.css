@@ -20,4 +20,5 @@ h1{
 
 #list-elements{ 
     list-style-type: none;
+    text-transform: capitalize;
 }
