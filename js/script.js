@@ -44,7 +44,7 @@ arr.sort();
 
 //iteration for   html elments output
 for (var i = 0; i < arr.length; i++) {
-    msg += "<li>" + (i + 1) + ": " + arr[i] + "</li> \n";
+    msg += "<li>" +"posizione "+ (i + 1) + ": " + arr[i] + "</li> \n";
 }
 
 listElements.innerHTML = msg;
