@@ -19,7 +19,7 @@ var listElements = document.getElementById("list-elements");
 
 //validation  for string that contain string number and empty string
 do {
-    surname = prompt("inserisci il cognome: ");
+    surname = prompt("inserisci il cognome: ").trim();
 
 } while (!surname && surname.match(reg));
 
