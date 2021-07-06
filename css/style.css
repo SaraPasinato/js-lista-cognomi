@@ -6,26 +6,24 @@
 }
 
 
-.container{
-    margin: 10px auto;
-    max-width: 50%;
+.item{
     min-height: 30vh;
     background-color: #008080bb;
     border: 2px solid slateblue;
     border-radius: 5px;
+    padding:0 30px 20px 30px;
 
 }
 h1{
     text-align: center;   
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-.box{
-    padding-left: 30%;
-}
 
 #list-elements{
     text-indent: 10px;
     padding-left: 20px;
     list-style-type: none;
+    margin: 0 25%;
+   
 }
