@@ -31,9 +31,14 @@ if(hasNum){
 //if passed validation than push surname in arr
 
 arr.push(surname.toLowerCase());
+
+
 //debug inline
 console.log("Prima dell'ordinamento:");
 console.table(arr);
+//index of surname before sort
+var before=document.getElementById("order-first");
+before.innerText=arr.indexOf(surname)+ 1;
 //now, sort 
 arr.sort();
 
@@ -46,3 +51,7 @@ listElements.innerHTML = msg;
 //debug inline
 console.log("dopo l'ordinamento:");
 console.table(arr);
+
+//index of surname before sort
+var after=document.getElementById("order-after");
+after.innerText=arr.indexOf(surname)+1;
