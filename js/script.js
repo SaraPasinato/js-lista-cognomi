@@ -13,19 +13,19 @@
 //list of surnames
 var arr = ["bianchi", "neri", "rossi", "verdi", "gialli"];
 var msg = "";   //for concat string msg;
-var surname=" ";
+var surname = " ";
 var reg = "[0-9]";// regular expression for number validation
 var listElements = document.getElementById("list-elements");
-var hasNum=false;
+var hasNum = false;
 //validation  for string that contain string number and empty string
 do {
     surname = prompt("inserisci il cognome: ").trim();
-    if(surname.match(reg)>0){
-        hasNum=true;
+    if (surname.match(reg) > 0) {
+        hasNum = true;
     }
 } while (!surname);
 
-if(hasNum){
+if (hasNum) {
     alert("nel tuo cognome c'è un numero...");
 }
 //if passed validation than push surname in arr
@@ -37,8 +37,8 @@ arr.push(surname.toLowerCase());
 console.log("Prima dell'ordinamento:");
 console.table(arr);
 //index of surname before sort
-var before=document.getElementById("order-first");
-before.innerText=arr.indexOf(surname)+ 1;
+var before = document.getElementById("order-first");
+before.innerText = arr.indexOf(surname) + 1;
 //now, sort 
 arr.sort();
 
@@ -53,5 +53,6 @@ console.log("dopo l'ordinamento:");
 console.table(arr);
 
 //index of surname before sort
-var after=document.getElementById("order-after");
-after.innerText=arr.indexOf(surname)+1;
+var after = document.getElementById("order-after");
+after.innerText = arr.indexOf(surname) + 1;
+after.style.color="#00f";
