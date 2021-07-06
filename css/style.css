@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container{
+    margin: 10px auto;
+    max-width: 50%;
+    min-height: 30vh;
+    background-color: #008080bb;
+    border: 2px solid slateblue;
+    border-radius: 5px;
+
+}
+.box,h1{
+    text-align: center;   
+    margin-top: 10px;
+}
+
+
+#list-elements{
+    text-indent: 10px;
+    padding-left: 20px;
+}
