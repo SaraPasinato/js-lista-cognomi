@@ -19,11 +19,13 @@ var listElements = document.getElementById("list-elements");
 var hasNum = false;
 //validation  for string that contain string number and empty string
 do {
-    surname = prompt("inserisci il cognome: ").trim();
+    surname = prompt("inserisci il cognome: ");
     if (surname.match(reg) > 0) {
         hasNum = true;
     }
-} while (!surname);
+} while (!surname || surname.trim() === '');
+
+surname=surname.trim();
 
 if (hasNum) {
     alert("nel tuo cognome c'è un numero...");
@@ -44,7 +46,7 @@ arr.sort();
 
 //iteration for   html elments output
 for (var i = 0; i < arr.length; i++) {
-    msg += "<li>" +"posizione "+ (i + 1) + ": " + arr[i] + "</li> \n";
+    msg += "<li>" + "posizione " + (i + 1) + ": " + arr[i] + "</li> \n";
 }
 
 listElements.innerHTML = msg;
@@ -55,4 +57,4 @@ console.table(arr);
 //index of surname before sort
 var after = document.getElementById("order-after");
 after.innerText = arr.indexOf(surname) + 1;
-after.style.color="#00f";
+after.style.color = "#00f";
